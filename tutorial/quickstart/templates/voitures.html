@@ -21,10 +21,7 @@
                 <tr>
                     <th scope="col-2">title</th>
                     <th scope="col-2">description</th>
-                    <th scope="col-2">sold</th>
                     <th scope="col-2">year</th>
-                    <th scope="col-2">type</th>
-                    <th scope="col-2">band</th>
                 </tr>
             </thead>
             <tbody id="tab_table">
@@ -34,7 +31,7 @@
     </div>
     </p>
     <script>
-        fetch("http://127.0.0.1:8000/listing/").then((data)=>{
+        fetch("http://127.0.0.1:8000/voiture/").then((data)=>{
             console.log(data); 
             return data.json(); // conversion en objet
         }).then((objetData)=>{
@@ -46,10 +43,7 @@
                 <tr>
                     <td>${values.title}</td>
                     <td>${values.description}</td>
-                    <td>${values.sold}</td>
                     <td>${values.year}</td>
-                    <td>${values.type}</td>
-                    <td>${values.band}</td>
                 </tr>
             `
             });
