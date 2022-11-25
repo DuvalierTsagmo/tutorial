@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+#mon modele band
 class Band(models.Model):
     class Genre(models.TextChoices):
         HIP_HOP = 'HH'
@@ -14,7 +15,7 @@ class Band(models.Model):
     active = models.fields.BooleanField(default=True)
     official_homepage = models.fields.URLField(null=True, blank=True)
     
-
+#mon modele listing
 class Listing(models.Model):
     class ListingType(models.TextChoices):
         RECORDS = 'R'
