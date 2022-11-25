@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import datetime
 
-#mon modele band
+#mon modele band de mon projet
 class Band(models.Model):
     class Genre(models.TextChoices):
         HIP_HOP = 'HH'
